@@ -77,5 +77,8 @@ setup(
             + generate_package_data('sila2lib/framework/schema', '.xsd')
             + generate_package_data('sila2lib/framework/std_features', '.pyi')
             + generate_package_data('sila2lib/framework/std_features', '.typed')
-    }
+    },
+    python_requires='>=3.7',
+    setup_requires=['wheel']
+
 )
