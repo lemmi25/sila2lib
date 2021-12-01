@@ -54,7 +54,7 @@ setup(
     author_email='mark.doerr@uni-greifswald.de',
     keywords=('SiLA 2, lab automation, laboratory, instruments,'
               'experiments, evaluation, visualisation, serial interface, robots'),
-    url='https://gitlab.com/SiLA2/sila_python',
+    url='https://github.com/lemmi25/sila2lib.git',
     license='MIT',
     packages=find_packages(),
     install_requires=["wheel", "grpcio", "grpcio-tools", "lxml", "zeroconf"],
