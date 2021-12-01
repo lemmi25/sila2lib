@@ -79,6 +79,6 @@ setup(
             + generate_package_data('sila2lib/framework/std_features', '.typed')
     },
     python_requires='>=3.7'
-    setup_requires=['wheel']
+    #setup_requires=['wheel']
 
 )
