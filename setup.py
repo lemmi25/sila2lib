@@ -56,8 +56,8 @@ setup(
               'experiments, evaluation, visualisation, serial interface, robots'),
     url='https://github.com/lemmi25/sila2lib.git',
     license='MIT',
-    #packages=find_packages(),
-    #install_requires=["wheel", "grpcio", "grpcio-tools", "lxml", "zeroconf"],
+    packages=find_packages(),
+    install_requires=["wheel", "grpcio", "grpcio-tools", "lxml", "zeroconf"],
     test_suite='',
     classifiers=['License :: OSI Approved :: MIT License',
                  'Intended Audience :: Developers',
@@ -78,7 +78,7 @@ setup(
             + generate_package_data('sila2lib/framework/std_features', '.pyi')
             + generate_package_data('sila2lib/framework/std_features', '.typed')
     },
-    python_requires='>=3.7',
-    setup_requires=['wheel']
+    python_requires='>=3.7'
+    #setup_requires=['wheel']
 
 )
