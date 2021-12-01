@@ -1,0 +1,28 @@
+syntax = "proto3";
+import "SiLAFramework.proto";
+package sila2.org.silastandard.none.simplefeature.v1;
+
+// Feature: Simple Feature
+//   Minimal feature definition, nothing is required. Can be used to check (default) attributes.
+service SimpleFeature {
+    
+    // Property Name
+    //   This is an observable property.
+    rpc Subscribe_PropertyIdentifier(sila2.org.silastandard.none.simplefeature.v1.Subscribe_PropertyIdentifier_Parameters) returns (stream sila2.org.silastandard.none.simplefeature.v1.Subscribe_PropertyIdentifier_Responses) {}
+    
+}
+
+// ----------------- Data Type definitions -----------------
+
+
+// ------ Command Parameter and Response definitions -------
+
+message Subscribe_PropertyIdentifier_Parameters {
+    // Empty message
+}
+
+message Subscribe_PropertyIdentifier_Responses {
+    sila2.org.silastandard.Boolean PropertyIdentifier = 1;
+}
+
+// ----------------- Metadata Definitions ------------------

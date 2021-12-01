@@ -1,0 +1,6 @@
+wheel
+lxml
+grpcio
+grpcio-tools
+zeroconf
+git+https://gitlab.com/tseverin/smart_template.git@master#egg=smart_template

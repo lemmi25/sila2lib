@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" MaturityLevel="Draft" Originator="org.silastandard" Category="none"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_base/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>SimpleFeature</Identifier>
+    <DisplayName>Simple Feature</DisplayName>
+    <Description>Minimal feature definition, nothing is required. Can be used to check (default) attributes.</Description>
+
+    <DataTypeDefinition>
+        <Identifier>IdentifierDefinition</Identifier>
+        <DisplayName>Identifier Definition</DisplayName>
+        <Description>A definition of an identifier data type</Description>
+        <DataType>
+            <DataTypeIdentifier>TestDataType</DataTypeIdentifier>
+        </DataType>
+    </DataTypeDefinition>
+</Feature>

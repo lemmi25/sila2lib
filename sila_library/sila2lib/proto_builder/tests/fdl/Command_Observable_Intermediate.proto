@@ -1,0 +1,35 @@
+syntax = "proto3";
+import "SiLAFramework.proto";
+package sila2.org.silastandard.none.simplefeature.v1;
+
+// Feature: Simple Feature
+//   Minimal feature definition, nothing is required. Can be used to check (default) attributes.
+service SimpleFeature {
+    // Command Name
+    //   This is an observable command including intermediate responses.
+    rpc CommandIdentifier(sila2.org.silastandard.none.simplefeature.v1.CommandIdentifier_Parameters) returns (sila2.org.silastandard.CommandConfirmation) {}
+    rpc CommandIdentifier_Intermediate(sila2.org.silastandard.CommandExecutionUUID) returns (stream sila2.org.silastandard.none.simplefeature.v1.CommandIdentifier_IntermediateResponses) {}
+    rpc CommandIdentifier_Info(sila2.org.silastandard.CommandExecutionUUID) returns (stream sila2.org.silastandard.ExecutionInfo) {}
+    rpc CommandIdentifier_Result(sila2.org.silastandard.CommandExecutionUUID) returns (sila2.org.silastandard.none.simplefeature.v1.CommandIdentifier_Responses) {}
+    
+    
+}
+
+// ----------------- Data Type definitions -----------------
+
+
+// ------ Command Parameter and Response definitions -------
+message CommandIdentifier_Parameters {
+    sila2.org.silastandard.Boolean ParameterIdentifier = 1;
+}
+
+message CommandIdentifier_Responses {
+    sila2.org.silastandard.Boolean ResponseIdentifier = 1;
+}
+
+message CommandIdentifier_IntermediateResponses {
+    sila2.org.silastandard.Boolean IntermediateResponseIdentifier = 1;
+}
+
+
+// ----------------- Metadata Definitions ------------------

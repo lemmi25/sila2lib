@@ -1,0 +1,3 @@
+[run]
+# do not include test directories for the absolute coverage
+omit = */tests*

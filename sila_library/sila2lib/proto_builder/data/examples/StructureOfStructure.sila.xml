@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="de.tum.biovt" Category="example"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_base/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>UnobservableCommandTest</Identifier>
+    <DisplayName>Unobservable Command Test</DisplayName>
+    <Description>
+        Exposes various unobservable commands for test purposes.
+    </Description>
+    <Command>
+        <Identifier>MakeCoffee</Identifier>
+        <DisplayName>Make Coffee</DisplayName>
+        <Description>Make coffee</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Sugar</Identifier>
+            <DisplayName>Sugar</DisplayName>
+            <Description>Want sugar ?</Description>
+            <DataType>
+                <Structure>
+                    <Element>
+                        <Identifier>Identifier1</Identifier>
+                        <DisplayName>Identifier 1</DisplayName>
+                        <Description>Description 1</Description>
+                        <DataType>
+                            <Structure>
+                                <Element>
+                                    <Identifier>Identifier2</Identifier>
+                                    <DisplayName>Identifier 2</DisplayName>
+                                    <Description>Description 2</Description>
+                                    <DataType>
+                                        <Basic>String</Basic>
+                                    </DataType>
+                                </Element>
+                            </Structure>
+                        </DataType>
+                    </Element>
+                </Structure>
+            </DataType>
+        </Parameter>
+    </Command>
+</Feature>

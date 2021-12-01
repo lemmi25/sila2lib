@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" MaturityLevel="Draft" Originator="org.silastandard" Category="none"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org ../../../schema/FeatureDefinition.xsd">
+    <Identifier>CompleteFeature</Identifier>
+    <DisplayName>Complete Feature</DisplayName>
+    <Description>A feature that contains one element of all defined elements.</Description>
+    <DataTypeDefinition>
+        <Identifier>DataTypeDefinitionIdentifier</Identifier>
+        <DisplayName>Data Type Definition Name</DisplayName>
+        <Description>The definition of a separate data type</Description>
+        <DataType>
+            <Basic>Boolean</Basic>
+        </DataType>
+    </DataTypeDefinition>
+    <Command>
+        <Identifier>CommandIdentifier</Identifier>
+        <DisplayName>Command Name</DisplayName>
+        <Description>A command defined in this feature</Description>
+        <Observable>No</Observable>
+    </Command>
+    <Property>
+        <Identifier>PropertyIdentifier</Identifier>
+        <DisplayName>Property Name</DisplayName>
+        <Description>A property defined in this feature</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Basic>Boolean</Basic>
+        </DataType>
+    </Property>
+    <DefinedExecutionError>
+        <Identifier>DefinedExecutionErrorIdentifier</Identifier>
+        <DisplayName>Defined Execution Error Name</DisplayName>
+        <Description>The definition of a defined execution error.</Description>
+    </DefinedExecutionError>
+</Feature>

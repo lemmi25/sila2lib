@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" MaturityLevel="Draft" Originator="org.silastandard" Category="none"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_base/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>SimpleFeature</Identifier>
+    <DisplayName>Simple Feature</DisplayName>
+    <Description>Minimal feature definition, nothing is required. Can be used to check (default) attributes.</Description>
+    <Command>
+        <Identifier>CommandIdentifier</Identifier>
+        <DisplayName>Command Name</DisplayName>
+        <Description>This is an observable command including intermediate responses.</Description>
+        <Observable>Yes</Observable>
+        <Parameter>
+            <Identifier>ParameterIdentifier</Identifier>
+            <DisplayName>Parameter Name</DisplayName>
+            <Description>A parameter that is passed to the command.</Description>
+            <DataType>
+                <Basic>Boolean</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ResponseIdentifier</Identifier>
+            <DisplayName>Response Name</DisplayName>
+            <Description>A simple response that is send by the command.</Description>
+            <DataType>
+                <Basic>Boolean</Basic>
+            </DataType>
+        </Response>
+        <IntermediateResponse>
+            <Identifier>IntermediateResponseIdentifier</Identifier>
+            <DisplayName>Intermediate Response Name</DisplayName>
+            <Description>A simple intermediate response that is send by the command.</Description>
+            <DataType>
+                <Basic>Boolean</Basic>
+            </DataType>
+        </IntermediateResponse>
+    </Command>
+</Feature>
